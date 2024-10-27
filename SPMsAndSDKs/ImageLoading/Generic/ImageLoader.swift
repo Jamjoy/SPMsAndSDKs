@@ -16,7 +16,8 @@ struct ImageLoader: View {
         Rectangle()
             .opacity(0)
             .overlay {
-                SDWebImageLoader(url: url, contentMode: contentMode)
+    //            SDWebImageLoader(url: url, contentMode: contentMode)
+                KingfisherImageLoader(url: url, contentMode: contentMode)
             }
             .clipped()
     }
